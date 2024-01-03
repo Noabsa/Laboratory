@@ -1,6 +1,9 @@
 name: Bootstrap
 
 on:
+  push:
+    paths:
+      - .github/workflows/bootstrap.yaml
   workflow_dispatch:
   
 env:
