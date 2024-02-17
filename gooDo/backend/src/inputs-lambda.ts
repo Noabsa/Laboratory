@@ -2,6 +2,9 @@
 import { ILambdaEvent } from '../utils/interfaces'
 import { fatalError, notFound, success } from '../utils/responseHandler'
 
+// TODO: Split test folder into it's own module
+// TODO: Improve typescript coverage
+
 export const handler = async (event: ILambdaEvent) => {
   console.log('EVENT: ' + JSON.stringify(event))
 

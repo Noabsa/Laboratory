@@ -16,6 +16,10 @@ export class goodoStack extends Stack {
     Tags.of(this).add('Project', 'gooDo')
 
     // LAMBDA CREATION, WE WILL USE IT ON API
+
+    // TODO: Change files name snakecase to kamelcase
+    // TODO: Add policies and roles to secure access
+    // TODO: Create constructor for lambdas
     const inputsLambda = new NodejsFunction(this, `gooDo-${props.stage}-Inputs-Lambda`, {
       handler: 'handler',
       runtime: Runtime.NODEJS_18_X,
@@ -67,6 +71,9 @@ export class goodoStack extends Stack {
     })
 
     //DYNAMO DB TABLES CREATION, LAMBDAS WILL READ AND WRITE THEM
+
+    // TODO: Table to V2
+    // TODO: Create constructor for tables
     const goodoMainTable = new Table(this, `gooDo-${props.stage}-mainTable`, {
       partitionKey: { name: 'userId', type: AttributeType.STRING },
       sortKey: { name: 'creation_date', type: AttributeType.NUMBER },
@@ -85,6 +92,8 @@ export class goodoStack extends Stack {
     goodoLogsTable.grantReadWriteData(usersLambda)
 
     // STRING PARAMETERS TO SAVE RELEVANT STACK DATA
+
+    // TODO: Create constructor for String Parameters
     new StringParameter(this, `gooDo-${props.stage}-API-endpoint`, {
       stringValue: api.url,
       description: `gooDo ${props.stage} api endpoint`,

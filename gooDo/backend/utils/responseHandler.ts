@@ -6,6 +6,8 @@ export const success = (body: Record<string, any>) => {
   return response
 }
 
+// TODO: Add info layers to improve debuggation on failure response
+
 const failure = (statusCode: number, body: string) => {
   const response: ILambdaResponse = { statusCode, body: JSON.stringify(body) }
   console.error('ERROR: ' + JSON.stringify(response))
