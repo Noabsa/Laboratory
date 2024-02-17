@@ -1,5 +1,5 @@
 import { App } from 'aws-cdk-lib'
-import { goodoStack } from '../lib/goodo-stack'
+import { goodoStack } from '../lib/goodoStack'
 import { STAGE } from '../../utils/constants'
 
 const app = new App()

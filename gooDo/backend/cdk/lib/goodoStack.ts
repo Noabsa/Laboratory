@@ -17,14 +17,13 @@ export class goodoStack extends Stack {
 
     // LAMBDA CREATION, WE WILL USE IT ON API
 
-    // TODO: Change files name snakecase to kamelcase
     // TODO: Add policies and roles to secure access
     // TODO: Create constructor for lambdas
     const inputsLambda = new NodejsFunction(this, `gooDo-${props.stage}-Inputs-Lambda`, {
       handler: 'handler',
       runtime: Runtime.NODEJS_18_X,
       timeout: Duration.seconds(30),
-      entry: join(__dirname, '../../src/inputs-lambda.ts'),
+      entry: join(__dirname, '../../src/inputsLambda.ts'),
       description: `gooDo ${props.stage} inputs lambda to route HTTP requests through backend methods`,
       functionName: `gooDo-${props.stage}-Inputs-Lambda`,
       environment: { stage: props.stage }
@@ -34,7 +33,7 @@ export class goodoStack extends Stack {
       handler: 'handler',
       runtime: Runtime.NODEJS_18_X,
       timeout: Duration.seconds(30),
-      entry: join(__dirname, '../../src/users-lambda.ts'),
+      entry: join(__dirname, '../../src/usersLambda.ts'),
       description: `gooDo ${props.stage} users lambda to route HTTP requests through backend methods`,
       functionName: `gooDo-${props.stage}-Users-Lambda`,
       environment: { stage: props.stage }

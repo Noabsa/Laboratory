@@ -1,6 +1,6 @@
 import express, { Request } from 'express'
-import { handler as usersLambda } from '../../src/users-lambda'
-import { handler as inputsLambda } from '../../src/inputs-lambda'
+import { handler as usersLambda } from '../../src/usersLambda'
+import { handler as inputsLambda } from '../../src/inputsLambda'
 import { ILambdaEvent } from '../../utils/interfaces'
 import { APIGatewayProxyEventQueryStringParameters } from 'aws-lambda'
 
