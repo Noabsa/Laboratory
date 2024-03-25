@@ -1,0 +1,10 @@
+**/node_modules
+**/cdk.out*
+*.js
+!jest.config.js
+!*.test.js
+**.d.ts
+**/build
+.env
+# todo.md
+coverage
