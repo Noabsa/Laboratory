@@ -1,0 +1,15 @@
+{
+  "extends": ["plugin:react/recommended", "plugin:react/jsx-runtime"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-key": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}
