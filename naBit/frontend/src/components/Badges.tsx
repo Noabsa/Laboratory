@@ -1,15 +1,12 @@
 import { Card } from '@mui/material'
-import { size } from '../utils/constants'
-
-const { s } = size
 
 function Badge() {
   return (
     <Card
       sx={{
-        height: s,
+        height: '50px',
         aspectRatio: 1,
-        borderRadius: '50%',
+        borderRadius: '100%',
         margin: '0 20px 0 0',
         bgcolor: 'secondary.dark',
         boxShadow: 5
