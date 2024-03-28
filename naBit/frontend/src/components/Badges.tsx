@@ -4,12 +4,12 @@ function Badge() {
   return (
     <Card
       sx={{
-        height: '50px',
+        height: '55px',
         aspectRatio: 1,
         borderRadius: '100%',
         margin: '0 20px 0 0',
         bgcolor: 'primary.dark',
-        boxShadow: 5
+        boxShadow: 3
       }}
     ></Card>
   )

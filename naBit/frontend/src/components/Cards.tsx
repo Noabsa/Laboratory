@@ -8,7 +8,7 @@ export function WideCard() {
         width: '200px',
         margin: '20px 10px',
         bgcolor: 'primary.main',
-        boxShadow: 5
+        boxShadow: 2
       }}
     ></Card>
   )
@@ -22,7 +22,7 @@ export function VerticalCard() {
         height: '200px',
         margin: '20px 10px',
         bgcolor: 'primary.main',
-        boxShadow: 5,
+        boxShadow: 2,
         overflow: 'hidden'
       }}
     ></Card>

@@ -51,7 +51,7 @@ export function MainSection(props: any) {
           bgcolor: 'grey.100',
           display: 'flex',
           alignItems: 'center',
-          padding: '0 40px'
+          padding: '0 45px'
         }}
       >
         <Badge />
