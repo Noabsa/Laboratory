@@ -8,7 +8,7 @@ function Badge() {
         aspectRatio: 1,
         borderRadius: '100%',
         margin: '0 20px 0 0',
-        bgcolor: 'secondary.dark',
+        bgcolor: 'primary.dark',
         boxShadow: 5
       }}
     ></Card>

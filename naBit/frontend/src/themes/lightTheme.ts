@@ -2,24 +2,22 @@ import { createTheme } from '@mui/material'
 
 const colors = {
   primary: { main: '#78decc', dark: '#00755e', light: '#c4fcf0' },
-  accent: { light: '#ffbe98', dark: '#c45259', main: '#c4525960' },
-  grey: { light: '#f5f5f5', dark: '#cccccc', main: '#000000' },
-  basics: { white: '#ffffff', black: '#000000' }
+  accent: { light: '#ffbe98', dark: '#5B1F23', main: '#c45259' },
+  grey: { light: '#f5f5f5', dark: '#424E55', main: '#CCCCCC' },
+  basics: { white: '#ffffff', black: '#1B262C' }
 }
 export const lightTheme = createTheme({
   palette: {
     mode: 'light',
     background: { paper: colors.basics.white, default: colors.grey.light },
-    divider: '#cccccc',
-    primary: {
-      dark: colors.primary.dark,
-      light: colors.primary.light,
-      main: colors.primary.main,
-      contrastText: colors.basics.black
-    },
-    secondary: { dark: '#c45259', light: '#ffbe98', main: '#c4525950', contrastText: '000000' },
-    success: { dark: '#00755e', light: '#00755e', main: '#00755e', contrastText: '000000' }
+    common: { black: colors.basics.black, white: colors.basics.white },
+    divider: colors.grey.main,
+    grey: { 100: colors.grey.light, 200: colors.grey.main, 300: colors.grey.dark },
+    primary: { main: colors.primary.main, light: colors.primary.light, dark: colors.primary.dark },
+    secondary: { main: colors.accent.main, light: colors.accent.main, dark: colors.accent.dark },
+    text: { disabled: colors.grey.main, primary: colors.basics.black, secondary: colors.grey.dark }
   },
+  typography: { fontFamily: 'Fantasy' },
   shadows: [
     'none',
     //Elevation #1

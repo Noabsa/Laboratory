@@ -9,12 +9,12 @@ export function FlexSection(props: any) {
   return (
     <Stack
       sx={{
-        flex: '1 0 40px',
-        bgcolor: 'background.default',
-        boxShadow: 4,
+        flex: '1 0 60px',
+        bgcolor: 'background.paper',
+        boxShadow: 5,
         zIndex: 10,
         position: 'relative',
-        '&:hover': { flex: '1 0 calc(100% - 120px - 40px)' }
+        '&:hover': { flex: '1 0 calc(100% - 150px - 60px)' }
       }}
     >
       <SectionTitle title={title} />
@@ -47,11 +47,11 @@ export function MainSection(props: any) {
     <Stack sx={{ flex: '0 1 100%' }}>
       <Box
         sx={{
-          minHeight: '80px',
-          bgcolor: 'secondary.main',
+          minHeight: '90px',
+          bgcolor: 'grey.100',
           display: 'flex',
           alignItems: 'center',
-          padding: '0 40px 0 40px'
+          padding: '0 40px'
         }}
       >
         <Badge />

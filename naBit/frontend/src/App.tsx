@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 function App() {
+  console.log(lightTheme)
   return (
     <ThemeProvider theme={lightTheme}>
       <Box
